@@ -1,0 +1,54 @@
+//Code  Descripción         Es            En            It             Fr         
+NM1    |Nombre de mes 1    |{Enero}      |{January}    |{Gennaio}     |{Janvier}  
+NM2    |Nombre de mes 2    |{Marzo}      |{March}      |{Marzo}       |{Mars}     
+NM3    |Nombre de mes 3    |{Agosto}     |{Agosto}     |{Agosto}      |{Agosto}   
+
+NN1    |Número 1           |{8}          |{8}          |{8}           |{8}        
+NN2    |Número 2           |{3}          |{3}          |{3}           |{3}        
+NN3    |Número 3           |{4}          |{4}          |{4}           |{4}        
+NN4    |Número 4           |{7}          |{7}          |{7}           |{7}        
+
+NP1    |Nombre Propio 1    |{Juan}       |{John}       |{Giovanni}    |{Jean}     
+NP2    |Nombre Propio 2    |{Maria}      |{Mary}       |{Maria}       |{Marie}    
+NP3    |Nombre Propio 3    |{Pedro}      |{Peter}      |{Pietro}      |{Pierre}   
+NP4    |Nombre Propio 4    |{Ana}        |{Anna}       |{Ana}         |{Ana}      
+
+NL1    |Nombre de Idioma 1 |{Inglés}     |{English}    |{Inglese}     |{Anglais}  
+NL2    |Nombre de Idioma 2 |{Español}    |{Spanish}    |{spagnolo}    |{Espagnol} 
+
+NS1    |Día de la semana 1 |{Martes}     |{Tuesday}    |{Martedì}     |{Mardi}    
+NS2    |Día de la semana 2 |{Lunes}      |{Monday}     |{Lunedì}      |{Lundi}    
+
+DD1    |Adverbio 1         |{todavía}    | {yet}       |{ancora}      |{Encore}   
+
+LL1    |Número Romano 1    |{III}        |{III}        |{III}         |{III}     
+LL2    |Número Romano 2    |{IV}         |{IV}         |{IV}          |{IV}      
+
+GY1    |Número del Año 1   |{2014}       |{2014}       |{2014}        |{2014}    
+GY2    |Número del Año 2   |{2016}       |{2016}       |{2016}        |{2016}    
+
+CD1    |Cantidad dinero 1  |{$100}       |{$100}       |{$100}        |{$100}    
+
+WD1    |Palabra 1          |{jugar}      |{play}       |{giocare}     |{jouer}   
+WD2    |Palabra 2          |{trabajar}   |{work}       |{lavorare}    |{labourer}
+
+NC1    |Número cardinal 1  |{7ma}        |{7ma}        |{7ma}         |{7ma}     
+
+HR1    |Hora 1             |{10}         |{10}         |{10}          |{10}      
+HR2    |Hora 2             |{12}         |{12}         |{12}          |{12}      
+
+LN1    |Nombre de lugar 1  |{Madrid}     |{Madrid}     |{Madrid}      |{Madrid}   
+
+PN1    |Apellido 1         |{Smit}       |{Smit}       |{Smit}        |{Smit}    
+
+FC1    |Fecha 1            |{15-05-2010} |{15-05-2010} |{15-05-2010}  |{15-05-2010}
+FC2    |Fecha 2            |{25-10-2016} |{25-10-2016} |{25-10-2016}  |{25-10-2016}
+
+CS1    |Tamaño 1           |{25}         |{25}         |{25}          |{25}         
+
+NA1    |Nombre de Animal 1 |{perros}     |{perros}     |{perros}      |{perros}     
+
+NO1    |Nombre de objeto 1 |{Manzanas}   |{Manzanas}   |{Manzanas}    |{Manzanas}   
+
+
+//DD => todavía; aún; ya; más; sin embargo; con todo; aun; así, ...mente

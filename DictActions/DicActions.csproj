@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5899C7C3-815C-404A-A56D-A53637106468}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CMD_SUPPORT;XML_SUPPORT;DIC_OLD_SUPPORT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE;CMD_SUPPORT;XML_SUPPORT;DIC_OLD_SUPPORT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Mercado|x86'">
+    <OutputPath>bin\x86\Mercado\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>..\Release\Tests.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataDView.cs" />
+    <Compile Include="DelNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelNames.Designer.cs">
+      <DependentUpon>DelNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindVerbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindVerbs.Designer.cs">
+      <DependentUpon>FindVerbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictRed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictRed.Designer.cs">
+      <DependentUpon>DictRed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDict.Designer.cs">
+      <DependentUpon>EditDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndexData.cs" />
+    <Compile Include="LangUtils.cs" />
+    <Compile Include="lnkWords.cs" />
+    <Compile Include="MarksMng.cs" />
+    <Compile Include="MergeDicts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MergeDicts.Designer.cs">
+      <DependentUpon>MergeDicts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MngDicts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MngDicts.Designer.cs">
+      <DependentUpon>MngDicts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortedIndexs.cs" />
+    <Compile Include="TextQuery.cs" />
+    <Compile Include="ViewData.cs" />
+    <EmbeddedResource Include="DelNames.resx">
+      <DependentUpon>DelNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindVerbs.resx">
+      <DependentUpon>FindVerbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictRed.resx">
+      <DependentUpon>DictRed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDict.resx">
+      <DependentUpon>EditDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MergeDicts.resx">
+      <DependentUpon>MergeDicts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MngDicts.resx">
+      <DependentUpon>MngDicts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrdEngineNet\TrdEngine.csproj">
+      <Project>{254EC761-3AD5-45B2-8CA2-B35D33686D43}</Project>
+      <Name>TrdEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FlechaDown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FlechaUp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Marcas.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
